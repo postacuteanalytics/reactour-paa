@@ -1,12 +1,11 @@
 {
-  "name": "reactour2",
-  "version": "1.0.3",
+  "name": "reactour-paa",
+  "version": "1.0.4",
   "description": "Tourist Guide into your React Components. This is a fork of reactour. It includes some improvements not yet in reactour including pre/post action functions and optinal dealy to wait for components to render.",
   "main": "dist/reactour.cjs.js",
   "module": "dist/reactour.esm.js",
   "scripts": {
     "prepare": "npm run lib",
-    "start": "webpack-dev-server --mode development --open --host=0.0.0.0 --disableHostCheck",
     "prelib": "rimraf dist",
     "lib": "rollup -c",
     "build": "webpack --mode production",
@@ -15,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RobertGary1/reactour.git"
+    "url": "git+https://github.com/mokeefe-paa/reactour-paa.git"
   },
   "keywords": [
     "react",
@@ -35,43 +34,38 @@
     "dist",
     "README.md"
   ],
-  "author": "Robert G <robertmgary@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RobertGary1/reactour/issues"
+    "url": "https://github.com/mokeefe-paa/reactour-paa/issues"
   },
-  "homepage": "https://github.com/RobertGary1/reactour#readme",
+  "homepage": "https://github.com/mokeefe-paa/reactour-paa#readme",
   "devDependencies": {
-    "@babel/cli": "7.5.5",
-    "@babel/core": "7.5.5",
+    "@babel/cli": "7.23.9",
+    "@babel/core": "7.23.3",
     "@babel/plugin-proposal-class-properties": "7.5.5",
     "@babel/plugin-syntax-dynamic-import": "7.2.0",
     "@babel/polyfill": "7.4.4",
     "@babel/preset-env": "7.5.5",
     "@babel/preset-react": "7.0.0",
-    "babel-eslint": "10.0.3",
-    "babel-loader": "8.0.6",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.2.5",
     "body-scroll-lock": "2.6.4",
     "css-loader": "3.2.0",
     "eslint": "6.3.0",
     "eslint-config-prettier": "6.1.0",
     "eslint-plugin-prettier": "3.1.0",
-    "html-loader": "0.5.5",
-    "html-webpack-plugin": "3.2.0",
+    "html-loader": "5.0.0",
+    "html-webpack-plugin": "5.6.0",
     "prettier": "1.18.2",
-    "react": "16.9.0",
-    "react-dom": "16.9.0",
     "reshake": "1.2.1",
     "rimraf": "3.0.0",
     "rollup": "1.20.3",
     "rollup-plugin-babel": "4.3.3",
-    "rollup-plugin-filesize": "6.1.1",
     "rollup-plugin-node-resolve": "5.2.0",
     "style-loader": "1.0.0",
     "styled-components": "4.3.2",
-    "webpack": "4.39.3",
-    "webpack-cli": "3.3.7",
-    "webpack-dev-server": "3.8.0"
+    "webpack": "5.89.0",
+    "webpack-cli": "5.1.4"
   },
   "peerDependencies": {
     "react": "^16.3.0",
@@ -83,7 +77,6 @@
     "classnames": "2.2.6",
     "focus-outline-manager": "^1.0.2",
     "lodash.debounce": "4.0.8",
-    "lodash.pick": "4.4.0",
     "prop-types": "15.7.2",
     "react-focus-lock": "2.0.5",
     "scroll-smooth": "1.0.1",
